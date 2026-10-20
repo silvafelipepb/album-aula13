@@ -1,0 +1,228 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4CA8D9;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+
+.topo {
+    padding: 45px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #145078, #A9DDF1);
+    border-bottom: 2px solid #ece7ea;
+}
+
+.subtitulo {
+    color: #f1a6cb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.topo h1 {
+    margin: 10px 0;
+    font-size: clamp(30px, 6vw, 52px);
+}
+
+.descricao-topo {
+    margin: 0;
+    color: #e0dce6;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* CAPA E APRESENTAÇÃO */
+
+.apresentacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    background-color: #145078;
+    border: 1px solid #c3ddee;
+    border-radius: 15px;
+}
+
+.apresentacao picture {
+    display: block;
+    min-width: 0;
+}
+
+.capa {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+
+.detalhes h2 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.detalhes p {
+    color: #d1d1dc;
+}
+
+.nome-musica {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+/* PLAYER DE ÁUDIO */
+
+audio {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 12px;
+}
+
+/* SEÇÕES */
+
+.secao {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #145078;
+    border: 1px solid #A9DDF1;
+    border-radius: 15px;
+}
+
+.secao h2 {
+    margin-top: 0;
+    font-size: 26px;
+}
+
+.secao p {
+    color: #d1d1dc;
+}
+
+/* AVISOS */
+
+.aviso {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #b9b9c8 !important;
+}
+
+/* TABELA RESPONSIVA */
+
+.tabela-rolavel {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+.tabela-rolavel:focus-visible {
+    outline: 3px solid #a6f1e2;
+    outline-offset: 3px;
+}
+
+table {
+    width: 100%;
+    min-width: 420px;
+    border-collapse: collapse;
+    background-color: #1b2030;
+}
+
+caption {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+thead {
+    background-color: #0b3a59;
+}
+
+tfoot {
+    background-color: #222033;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #34384c;
+}
+
+tbody th {
+    color: #a6d7f1;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    margin-top: 40px;
+    padding: 25px 15px;
+    text-align: center;
+    background-color: #151522;
+    color: #c4c4d0;
+    font-size: 14px;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    .topo {
+        padding: 30px 15px;
+    }
+
+    .apresentacao {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .detalhes h2 {
+        font-size: 26px;
+    }
+
+    .secao {
+        margin-top: 18px;
+        padding: 15px;
+    }
+
+    .secao h2 {
+        font-size: 23px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
